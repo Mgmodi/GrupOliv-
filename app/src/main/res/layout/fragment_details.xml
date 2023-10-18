@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/details_logo"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:srcCompat="@drawable/olive_cover" />
+
+    <ImageView
+        android:id="@+id/details_wall"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_logo"
+        tools:srcCompat="@drawable/olive_wall" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_logo"
+        app:srcCompat="@drawable/overlay2" />
+
+    <ImageView
+        android:id="@+id/details_phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/details_location2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_logo"
+        app:srcCompat="@drawable/button" />
+
+    <ImageView
+        android:id="@+id/details_location2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/details_phone2"
+        app:layout_constraintTop_toBottomOf="@+id/details_logo"
+        app:srcCompat="@drawable/button" />
+
+    <ImageView
+        android:id="@+id/details_location3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/details_location2"
+        app:layout_constraintEnd_toEndOf="@+id/details_location2"
+        app:layout_constraintStart_toStartOf="@+id/details_location2"
+        app:layout_constraintTop_toTopOf="@+id/details_location2"
+        app:layout_constraintVertical_bias="0.32999998"
+        app:srcCompat="@drawable/geoloc_icon" />
+
+    <ImageView
+        android:id="@+id/details_phone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/details_phone2"
+        app:layout_constraintEnd_toEndOf="@+id/details_phone2"
+        app:layout_constraintStart_toStartOf="@+id/details_phone2"
+        app:layout_constraintTop_toTopOf="@+id/details_phone2"
+        app:layout_constraintVertical_bias="0.32999998"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <TextView
+        android:id="@+id/details_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telèfono"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/details_phone2"
+        app:layout_constraintEnd_toEndOf="@+id/details_phone2"
+        app:layout_constraintStart_toStartOf="@+id/details_phone2"
+        app:layout_constraintTop_toBottomOf="@+id/details_phone3" />
+
+    <TextView
+        android:id="@+id/details_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donde Estamos"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/details_location2"
+        app:layout_constraintEnd_toEndOf="@+id/details_location2"
+        app:layout_constraintStart_toStartOf="@+id/details_location2"
+        app:layout_constraintTop_toBottomOf="@+id/details_location3" />
+
+    <ImageView
+        android:id="@+id/details_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/details_location2"
+        app:layout_constraintStart_toStartOf="@+id/details_phone2"
+        app:layout_constraintTop_toBottomOf="@+id/details_phone2"
+        app:srcCompat="@drawable/reservar_button" />
+
+    <TextView
+        android:id="@+id/details_reservation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESERVAR"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/details_reservation"
+        app:layout_constraintEnd_toEndOf="@+id/details_reservation"
+        app:layout_constraintStart_toStartOf="@+id/details_reservation"
+        app:layout_constraintTop_toTopOf="@+id/details_reservation" />
+
+    <ImageView
+        android:id="@+id/details_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="2014 GrupOlive SlowFoods"
+        android:textColor = "@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
